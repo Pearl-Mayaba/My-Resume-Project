@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  background: #1e1e2f;
+  color: white;
+  padding: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 3px solid #ddd;
+}
+
+.name {
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.role {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.left-column h2 {
+  margin-top: 25px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 5px;
+}
+
+.left-column a {
+  color: #9bd1ff;
+  text-decoration: none;
+}
+
+.left-column ul {
+  padding-left: 20px;
+}
+
+.right-column {
+  padding: 40px;
+}
+
+.right-column h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.date {
+  color: #777;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-column {
+    text-align: center;
+  }
+
+  .left-column ul {
+    text-align: left;
+  }
+}
